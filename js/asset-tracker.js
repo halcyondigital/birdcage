@@ -19,11 +19,12 @@
                 group: 'assets',
                 sort: false,
                 onAdd: function (/**Event*/evt) {
-                  var itemEl = evt.item;  // dragged HTMLElement
-                  var targetEl = evt.to;    // target list
-                  console.log(itemEl);
-                  console.log(targetEl);
-                  var assetID = "d4fac94c-b6e1-4f99-8258-81fa6ec7e605";
+                  var assetEl = evt.item;  // dragged HTMLElement
+                  var locationEl = evt.to;    // target list
+                  var assetID = $(assetEl).find('.asset-uuid').text();
+                  console.log(assetID);
+                  console.log(locationEl);
+                  //var assetID = "d4fac94c-b6e1-4f99-8258-81fa6ec7e605";
                   var locationID = "8bc52bfd-b1ea-4d04-b7a9-e79337aa6703";
                   var asset = {
                     data: {
