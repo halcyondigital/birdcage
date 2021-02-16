@@ -1,5 +1,7 @@
 <?php
 
+use Drupal\views\ViewExecutable;
+
 /**
  * Implements hook_theme_suggestions_HOOK_alter for blocks.
  */
@@ -8,5 +10,14 @@ function birdcage_theme_suggestions_block_alter(&$suggestions, $variables) {
   // Load theme suggestions for blocks from parent theme.
   foreach ($suggestions as &$suggestion) {
     $suggestion = str_replace('birdcage_', 'gin_', $suggestion);
+  }
+}
+
+/**
+* Implements hook_views_pre_render().
+*/
+function birdcage_views_pre_render(ViewExecutable $view) {
+  if (isset($view) && ($view->storage->id() == 'assets')) {
+    $view->element['#attached']['library'][] = 'birdcage/asset-tracker';
   }
 }

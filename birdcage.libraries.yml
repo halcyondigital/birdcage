@@ -2,3 +2,14 @@ global-styling:
   css:
     component:
       css/style.css: {}
+
+asset-tracker:
+  version: 1.x
+  css:
+    theme:
+      css/asset-tracker.css: {}
+
+  js:
+    js/asset-tracker.js: {}
+  dependencies:
+    - core/sortable
