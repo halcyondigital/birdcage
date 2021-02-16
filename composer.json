@@ -1,0 +1,6 @@
+{
+    "name": "halcyondigital/birdcage",
+    "description": "Drupal 9 theme for Halcyon Digital intranet. Based on Gin.",
+    "type": "drupal-theme",
+    "minimum-stability": "dev"
+}
