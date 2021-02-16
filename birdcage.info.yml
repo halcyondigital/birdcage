@@ -1,6 +1,6 @@
 name: Birdcage
 type: theme
-description: This is a fluffy sub theme of Classy
+description:  Drupal 9 theme for Halcyon Digital intranet. Based on Gin.
 core_version_requirement: ^8.8 || ^9
 
 # Defines the base theme
