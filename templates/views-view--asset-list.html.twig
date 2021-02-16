@@ -52,12 +52,14 @@
   {{ attachment_before }}
 
   <div class="sortable-assets">
-  {% if rows -%}
-      {{ rows }}
-  {% elseif empty -%}
+    {% if rows -%}
+        {{ rows }}
+    {% endif %}
+  </div>
+  {% if empty -%}
     {{ empty }}
   {% endif %}
-  </div>
+
   {{ pager }}
 
   {{ attachment_after }}
