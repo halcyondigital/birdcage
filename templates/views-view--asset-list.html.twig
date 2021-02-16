@@ -51,13 +51,13 @@
   {{ exposed }}
   {{ attachment_before }}
 
+  <div class="sortable-assets">
   {% if rows -%}
-    <div class="sortable-assets">
       {{ rows }}
-    </div>
   {% elseif empty -%}
     {{ empty }}
   {% endif %}
+  </div>
   {{ pager }}
 
   {{ attachment_after }}
