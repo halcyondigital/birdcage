@@ -59,7 +59,7 @@
         
         function updateAsset(csrfToken, asset, assetID) {
           $.ajax({
-              url: '/jsonapi/node/asset/' . assetID,
+              url: `/jsonapi/node/asset/${assetID}`,
               method: 'PATCH',
               headers: {
                   'Content-Type': 'application/vnd.api+json',
