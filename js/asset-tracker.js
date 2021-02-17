@@ -24,7 +24,6 @@
                   var assetId = $(assetEl).find('.asset-uuid').text();
                   var locationId = $(locationEl).parents('.location').data('locationUuid');
                   console.log(locationId);
-                  //var locationID = "8bc52bfd-b1ea-4d04-b7a9-e79337aa6703";
                   var asset = {
                     data: {
                       type: "node--asset",
