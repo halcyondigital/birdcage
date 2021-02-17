@@ -2,11 +2,14 @@
     display: grid;
     grid-template-columns: 4fr 3fr;
 }
-.view-assets .view-content:first-child {
+.view-assets .view-content .location:first-child {
     grid-row: 1 / span 1000;
+    margin-right: 3rem;
 }
 .sortable-assets {
     min-height: 100px;
+    border: 1px solid transparent;
+    padding: 15px;
 }
 .dragging .sortable-assets {
     border: 1px dashed;
