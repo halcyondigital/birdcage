@@ -23,9 +23,7 @@
                   var locationEl = evt.to;    // target list
                   var assetID = $(assetEl).find('.asset-uuid').text();
                   //var locationID = $(locationEl).parents('.location');
-                  console.log(assetID);
                   console.log(locationEl);
-                  //var assetID = "d4fac94c-b6e1-4f99-8258-81fa6ec7e605";
                   var locationID = "8bc52bfd-b1ea-4d04-b7a9-e79337aa6703";
                   var asset = {
                     data: {

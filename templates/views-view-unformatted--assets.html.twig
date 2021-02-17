@@ -28,6 +28,7 @@
   %}
   <div{{ row.attributes.addClass(row_classes) }}>
     {{ kint(row) }}
+    {{ row._entity.id }}
     {{- row.content -}}
   </div>
 {% endfor %}
