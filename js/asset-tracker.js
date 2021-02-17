@@ -17,9 +17,6 @@
                     data: {
                       type: "node--asset",
                       id: assetId, // eg "d4fac94c-b6e1-4f99-8258-81fa6ec7e605"
-                      attributes: {
-                        title: "API test HDD"
-                      },
                       relationships: {
                         field_location: {
                           data: {
