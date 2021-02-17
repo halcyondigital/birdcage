@@ -26,9 +26,7 @@
       default_row_class ? 'views-row',
     ]
   %}
-  <div{{ row.attributes.addClass(row_classes) }}>
-    {{ kint(row) }}
-    {{ view.style_plugin.getField(loop.index0, 'uuid') }}
+  <div{{ row.attributes.addClass(row_classes) }} data-location-uuid="{{ view.style_plugin.getField(loop.index0, 'uuid') }}">
     {{- row.content -}}
   </div>
 {% endfor %}
