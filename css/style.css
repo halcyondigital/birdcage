@@ -6,6 +6,9 @@
 #drupal-modal {
 	background-color: #1b1b1d;
 }
+#drupal-modal select {
+	width: 100%;
+}
 #drupal-modal .layout-region.layout-region-node-secondary {
     display: none;
 }
