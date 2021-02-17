@@ -13,7 +13,6 @@
                   var locationEl = evt.to;    // target list
                   var assetId = $(assetEl).find('.asset-uuid').text();
                   var locationId = $(locationEl).parents('.location').data('locationUuid');
-                  console.log(locationId);
                   var asset = {
                     data: {
                       type: "node--asset",
