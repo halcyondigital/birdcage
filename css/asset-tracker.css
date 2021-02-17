@@ -1,9 +1,15 @@
 .view-assets .view-content {
     display: grid;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 4fr 3fr;
 }
 .view-assets .view-content:first-child {
-    grid-column: 1/-1;
+    grid-row: 1 / span 1000;
+}
+.sortable-assets {
+    min-height: 100px;
+}
+.dragging .sortable-assets {
+    border: 1px dashed;
 }
 .sortable-assets .sortable-asset {
 	display: inline-block;
@@ -20,6 +26,9 @@
 }
 .sortable-assets .sortable-asset .icon {
     fill: #ccc;
+}
+.sortable-assets .sortable-asset .asset-uuid {
+	display: none;
 }
 .sortable-assets .sortable-asset .views-field-changed {
 	font-size: 0.6em;

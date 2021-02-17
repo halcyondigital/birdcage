@@ -8,6 +8,12 @@
                 animation: 150,
                 group: 'assets',
                 sort: false,
+	              onChoose: function (/**Event*/evt) {
+                  $(document.body).addClass('dragging');
+	              },
+              	onUnchoose: function(/**Event*/evt) {
+                  $(document.body).removeClass('dragging');
+              	},
                 onAdd: function (/**Event*/evt) {
                   var assetEl = evt.item;  // dragged HTMLElement
                   var locationEl = evt.to;    // target list
