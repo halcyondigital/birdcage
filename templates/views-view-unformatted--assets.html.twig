@@ -28,7 +28,7 @@
   %}
   <div{{ row.attributes.addClass(row_classes) }}>
     {{ kint(row) }}
-    {{ row._entity.id }}
+    {{ view.style_plugin.getField(loop.index0, 'uuid') }}
     {{- row.content -}}
   </div>
 {% endfor %}
